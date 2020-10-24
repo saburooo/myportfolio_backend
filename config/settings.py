@@ -88,7 +88,7 @@ DATABASES = {
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSON_CLASSES': [
-        'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
     ],
     'EXCEPTION_HANDLER': 'myportfolio.mysite.utils.custom_exception_handler'
 }

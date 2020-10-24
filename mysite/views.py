@@ -15,5 +15,5 @@ from rest_framework.response import Response
 
 class AboutViewSet(viewsets.ReadOnlyModelViewSet):
     """ AboutモデルのCRUD用APIクラス、ただし、read only """
-    queryset = About.objects.all()
+    queryset = About.objects.get(id=1)
     serializer_class = AboutSerializer
