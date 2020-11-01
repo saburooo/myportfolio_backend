@@ -1,2 +1,2 @@
-__pycache__
+__pycache_        'DIRS': [os.path.join(BASE_DIR, 'templates')],_
 local_*

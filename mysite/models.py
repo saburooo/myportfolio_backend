@@ -17,3 +17,7 @@ class About(models.Model):
     def __str__(self):
         """何をリターンしましょうかね"""
         return self.title
+
+
+class NameDetail(models.Model):
+    name = models.OneToOneField(About, verbose_name='概要', on_delete=models.CASCADE)

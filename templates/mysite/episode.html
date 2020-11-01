@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block page_title %}インデックス{% endblock %}
+{% block contents %}
+<h1>自己紹介するね！！</h1>
+<p>{{ about.title }}</p>
+<ul>
+    <li><a href="{% url 'name' %}">お名前</a></li>
+    <li><a href="{% url 'basic' %}">基本</a></li>
+    <li><a href="{% url 'episode' %}">エピソード</a></li>
+    <li><a href="{% url 'appeal' %}">アピール</a></li>
+    <li><a href="{% url 'email' %}">Eメール</a></li>
+</ul>
+{% endblock %}
